@@ -1,5 +1,5 @@
 
 
-print("Look, I swear im building something, but let me larp in the meantime")
+print("Thats just the new meta, you gotta fake it till you make it")
 
 
