@@ -1,4 +1,25 @@
 
+def bubble_sort(values: list[int]) -> list[int]:
+    """Return the values in ascending order using bubble sort."""
+    result = values.copy()
 
-print("Work in progress, trust")
+    for end in range(len(result) - 1, 0, -1):
+        swapped = False
 
+        for index in range(end):
+            if result[index] > result[index + 1]:
+                result[index], result[index + 1] = (
+                    result[index + 1],
+                    result[index],
+                )
+                swapped = True
+
+        if not swapped:
+            break
+
+    return result
+
+
+if __name__ == "__main__":
+    numbers = [64, 34, 25, 12, 22, 11, 90]
+    print(bubble_sort(numbers))
